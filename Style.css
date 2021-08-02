@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.football {
+    position: relative;
+    margin-top: 20px; margin-bottom: 20px;
+}
+.field {
+    width: 100%;
+    border-radius: 10px;
+}
+.ball {
+    position: absolute; top: 0%; left: 0%;
+    width: 100px; height: 100px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.but {
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.saveScore {
+    margin-left: 0px;
+}
+
+.score {
+    padding: 20px;
+    font-size: 25px;
+}
+
+/* Всплывающее окно */
+
+.overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    background-color: rgba(0,0,0,0.87);    
+}
+
+.dlg-modal {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    position: fixed;
+    left: 50%;
+    z-index: 10;
+    padding: 35px 36px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.85);
+    width: 100%;
+    max-width: 570px;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.dlg-modal-fade {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* АНИМАЦИИ */
+
+.fadeIn, .fadeOut {
+	animation-duration: 0.4s;
+	animation-timing-function: linear;
+}
+ 
+
+
+@keyframes fadeIn { 
+	from {
+		opacity: 0;
+		visibility: hidden;
+	}
+	to { 
+		opacity:1;
+		visibility: visible; 
+	}
+}
+
+.fadeIn {
+	animation-name: fadeIn;
+	opacity: 1;
+	visibility: visible;
+}
+ 
+
+
+@keyframes fadeOut { 
+	from {
+		opacity: 1;
+		visibility: visible;
+	}
+	to {
+		opacity:0;
+		visibility: hidden;
+	}
+}
+
+.fadeOut {
+	animation-name: fadeOut;
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* Кнопка закрытия окна */
+.closer {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://w7.pngwing.com/pngs/844/786/png-transparent-maine-computer-icons-close-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.head {
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.title {
+    margin: 0px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.el {
+    display: flex;
+    justify-content: space-between;
+}
+
+.load {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+}

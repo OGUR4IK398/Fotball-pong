@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src='main.js' defer></script>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="football">
+        <img class="field" src="http://zakagioboi.ru/assets/images/products/sport/SPORT-55770769.jpg">
+        <img class="ball" src="https://pngicon.ru/file/uploads/football.png">
+    </div>
+    <div class="menu">
+        <button class="but saveScore">Save Score</button>
+        <button class="but newGame">New Game</button>
+        <button class="but saveList" data-modal="modal_1">Save List</button>
+    </div>
+    <div class="score">
+        <p>0:0</p>
+    </div>
+
+    <div class="overlay fadeOut" data-close=""></div>
+
+    <div id="modal_1" class="dlg-modal dlg-modal-fade">
+        <div class="head">
+            <h3 class='title'>Saved Games</h3>
+            <span class="closer" data-close=""></span>
+        </div>
+        <div class="list">
+            <div class="el">
+                <p class='s1'>Сохранение 1</p>
+                <button class="load load1">load</button>
+            </div>
+            
+            <div class="el">
+                <p class='s2'>Сохранение 2</p>
+                <button class="load load2">load</button>
+            </div>
+            
+            <div class="el">
+                <p class='s3'>Сохранение 3</p>
+                <button class="load load3">load</button>
+            </div>
+            
+            <div class="el">
+                <p class='s4'>Сохранение 4</p>
+                <button class="load load4">load</button>
+            </div>
+            
+            <div class="el">
+                <p class='s5'>Сохранение 5</p>
+                <button class="load load5">load</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var typeAnimate = 'fade';
+    </script>
+</body></html>
