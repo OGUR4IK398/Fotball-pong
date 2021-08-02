@@ -83,7 +83,7 @@ $('.ball').on('click', function () {
 let saveScore = $('.saveScore');
 let newGame = $('.newGame');
 let saveList = $('.saveList');
-
+let saves = $('.saves');
 
 
 
@@ -96,7 +96,10 @@ Storage.prototype.getObj = function (key) {
     return JSON.parse(this.getItem(key));
 };
 
-
+// Обработчик нажатия на Saves
+saves.on('click', function(){
+    localStorage.setItem('games', JSON.stringify([{},{},{},{},{}]));
+});
 
 // Обработчик нажатия на Save Score
 saveScore.on('click', function () {
